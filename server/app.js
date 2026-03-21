@@ -3,7 +3,7 @@ import cookieParser from "cookie-parser";
 import {config} from "dotenv"
 import fileUpload from "express-fileupload";
 import cors from "cors";
-import { dbConnection } from "./database/db";
+import { dbConnection } from "./database/db.js";
 
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(
 );
 app.use(cookieParser());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 app.use(
     fileUpload({
@@ -29,6 +29,7 @@ app.use(
 );
 
 dbConnection();
+
 export default app;
 
 
