@@ -1,4 +1,5 @@
 # mern-chat-app
+
 # 💬 MERN Realtime Chat Application
 
 A **full-stack realtime chat application** built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) and **Socket.io** for instant communication.
